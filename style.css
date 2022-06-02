@@ -16,6 +16,10 @@ a {
     width: 1460px;
     margin: 0 auto;
 }
+.container-block {
+    width: 1600px;
+    margin: 0 auto;
+}
 
 /* header */
 
@@ -199,9 +203,10 @@ a {
     color: white;
 }
 .hero-content-state__block {
+    margin-top: 30px;
     background-color: #2F2B43;
     border-radius: 10px;
-    width: 400px;
+    width: 370px;
     height: 250px;
     display: flex;
     align-items: center;
@@ -212,6 +217,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 10px;
+    
 }
 .hero-content-state__icon {
     margin-right: 5px;
@@ -221,13 +228,13 @@ a {
 .hero-content-state__text {
     font-size: 12px;
     font-weight: 700;
+    margin-right: auto;
 }
 .hero-content__state__wrapper {
     margin-top: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: baseline;
 }
 .hero-content-state__desc span {
     font-size: 14px;
