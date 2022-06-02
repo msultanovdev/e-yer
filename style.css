@@ -40,7 +40,6 @@ a {
     margin-left: 35px;
 }
 .header__context {
-    margin-left: 50px;
     font-size: 15px;
     font-weight: medium;
 }
@@ -76,18 +75,18 @@ a {
 /* sidebar */
 
 .sidebar {
-    width: 400px;
+    width: 330px;
 }
 .sidebar__account__title {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
 }
 .sidebar__account__info {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
 }
 .sidebar__account__adress {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     color: #928CAC;
 }
@@ -96,7 +95,7 @@ a {
     background-position: right;
     background-color: #2F2B43;
     border-bottom: 1px solid #4B4962;
-    padding: 40px;
+    padding: 30px 10px;
     line-height: 1.5;
     display: flex;
     align-items: center;
@@ -120,7 +119,7 @@ a {
     margin: 22px 10px;
 }
 .sidebar__tools__item-active {
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     background-color: #6834D5;
 }
@@ -140,17 +139,17 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
-    width: 90%;
+    width: 92%;
     margin: 0 auto;
     border-bottom: 1px solid #928CAC;
 }
 .sidebar__article__title {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 800;
     text-transform: uppercase;
 }
 .sidebar__article__text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 .sidebar__article__wrapper {
@@ -163,8 +162,8 @@ a {
     font-size: 16px;
     font-weight: 700;
     color: #FFFFFF;
-    height: 32px;
-    width: 62px;
+    height: 30px;
+    width: 40px;
     background-color: #6834D5;
     border-radius: 5px;
 }
@@ -182,7 +181,7 @@ a {
     font-size: 14px;
     font-weight: 700;
     padding: 30px 0px;
-    margin-right: 28px;
+    margin-right: 38px;
 }
 .hero-content__link-active {
     color: #EFECFF;
@@ -198,4 +197,39 @@ a {
     font-size: 30px;
     font-weight: 900;
     color: white;
+}
+.hero-content-state__block {
+    background-color: #2F2B43;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-content-state__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-content-state__icon {
+    margin-right: 5px;
+    width: 8px;
+    height: 8px;
+}
+.hero-content-state__text {
+    font-size: 12px;
+    font-weight: 700;
+}
+.hero-content__state__wrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.hero-content-state__desc span {
+    font-size: 14px;
+    margin-left: 30px;
 }
