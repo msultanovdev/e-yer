@@ -198,8 +198,8 @@ a {
     color: #928CAC;
     font-size: 14px;
     font-weight: 700;
-    padding: 30px 0px;
-    margin-right: 38px;
+    padding: 20px 0px;
+    margin-right: 40px;
 }
 .hero-content__link-active {
     color: #EFECFF;
@@ -217,11 +217,10 @@ a {
     color: white;
 }
 .hero-content-state__block {
-    margin-top: 30px;
     background-color: #2F2B43;
     border-radius: 10px;
-    width: 370px;
-    height: 250px;
+    width: 350px;
+    height: 270px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -240,7 +239,7 @@ a {
     height: 8px;
 }
 .hero-content-state__text {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     margin-right: auto;
 }
@@ -253,4 +252,81 @@ a {
 .hero-content-state__desc span {
     font-size: 14px;
     margin-left: 30px;
+}
+.hero-content-diagrams {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-content-diagrams {
+    margin-top: 30px;
+}
+.hero-content-state__block-diagram {
+    margin: 0px 10px 0px 10px;
+    background-color: #2F2B43;
+    border-radius: 10px;
+    width: 510px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* hero content card */
+.hero-content-card {
+    width: 260px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-content-card__header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #A381E8;
+}
+.header-content-card__logo {
+    background-color: #A381E8;
+    border-radius: 30px;
+}
+.hero-content-card__block {
+    margin-left: 20px;
+}
+.header-content-card__title {
+    font-size: 22px;
+    font-weight: 900;
+}
+.header-content-card__text {
+    font-size: 13px;
+    font-weight: 900;
+}
+.hero-content-card__info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #A381E8;
+}
+.hero-content-card__info div {
+    display: flex;
+    align-items: center;
+}
+.hero-content-card__info-value {
+    font-weight: 900;
+}
+.hero-content-card__info-title {
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.hero-content-card {
+    width: 290px;
+    height: 270px;
+    border-radius: 16px;
+    padding: 35px;
+    background-color: #6A34DA;
 }
