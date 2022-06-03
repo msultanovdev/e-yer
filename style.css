@@ -20,7 +20,15 @@ a {
     width: 1600px;
     margin: 0 auto;
 }
-
+.green {
+    color: #47DC65;
+}
+.red {
+    color: #EE6F85;
+}
+.blue {
+    color: #19A8F5;
+}
 /* header */
 
 .header {
@@ -79,11 +87,14 @@ a {
 /* sidebar */
 
 .sidebar {
-    width: 330px;
+    width: 300px;
 }
 .sidebar__account__title {
     font-size: 13px;
     font-weight: 700;
+}
+.sidebar__account__logo-img {
+    width: 60px;
 }
 .sidebar__account__info {
     font-size: 13px;
@@ -109,7 +120,7 @@ a {
 /* sidebar tools */
 
 .sidebar__tools {
-    width: 18%;
+    width: 17%;
     height: 540px;
     margin: 10px;
     background-color: #2F2B43;
@@ -130,6 +141,9 @@ a {
 .sidebar__tools__item-wrapper {
     margin-top: 40px;
 }
+.sidebar__tools__icon {
+    width: 30px;
+}
 .sidebar__article {
     background-color: #34324C;
     border-left: 1px solid #707070;
@@ -142,7 +156,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: 16px 0px;
     width: 92%;
     margin: 0 auto;
     border-bottom: 1px solid #928CAC;
