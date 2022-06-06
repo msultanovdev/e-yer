@@ -13,6 +13,13 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 }
+input {
+    border: none;
+}
+  
+  input:focus {
+    outline: none;
+}
 .container {
     width: 1460px;
     margin: 0 auto;
@@ -370,7 +377,7 @@ a {
 .tb th { 
     color: #ffffff; 
     border: none; 
-    padding-bottom: 20px;
+    padding-bottom: 21px;
     background-color: transparent; 
 }
 .hero-content-table__name {
@@ -512,7 +519,6 @@ a {
     display: flex;
 }
 .hero-fine-graph {
-    width: 650px;
     height: 380px;
     margin: 0px 0px 10px 10px;
     border-radius: 10px;
@@ -599,4 +605,70 @@ a {
 }
 .hero-fine-amount__cash-wrapper {
     width: 150px;
+}
+.input-block {
+    display: flex;
+    flex-direction: column;
+}
+.input__hero {
+    font-size: 12px;
+    width: 70px;
+    height: 30px;
+    background-color: #3F3C5D;
+    box-shadow: none;
+    border-radius: 5px;
+    outline: none;
+    color: #ffffff;
+    padding-left: 3px;
+}
+.input__hero::placeholder {
+    color: #8981A4;
+    padding-left: 3px;
+}
+.input__title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0px; 
+}
+.select__hero {
+    height: 30px;
+    width: 170px;
+    background-color: #3F3C5D;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #8981A4;
+}
+.input__hero-fine {
+    width: 130px;
+}
+.hero-info-search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #6A34DA;
+    width: 35px;
+    height: 30px;
+    border-radius: 5px;
+}
+.input__hero-city {
+    width: 190px;
+}
+.id__input::placeholder {
+    color: #ffffff;
+}
+.select__hero-variants {
+    width: 240px;
+}
+.hero-info-search-btn:hover {
+    cursor: pointer;
+}
+.hero-info-search {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #54506B;
 }
