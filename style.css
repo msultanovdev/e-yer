@@ -352,8 +352,7 @@ input {
     background-color: #6A34DA;
 }
 .tb { 
-    border-collapse: 
-    collapse; 
+    border-collapse: collapse; 
     width: 100%;
     margin-left: 10px;
 }
@@ -671,4 +670,127 @@ input {
     justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 2px solid #54506B;
+}
+.hero-informer-block__title {
+    font-size: 13px;
+    font-weight: 500;
+}
+.hero-informer-block__value-item {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 0px 3px;
+}
+.hero-informer-block__value {
+    margin-top: 5px;
+    height: 25px;
+    background: #3F3C5D;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+.hero-informer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #54506B;
+}
+.informer-tb th {
+    border-collapse: collapse;
+    font-size: 11px;
+    border: solid 1px #54506B; 
+    padding: 0;
+}
+.informer-tb td {
+    font-size: 10px;
+}
+.informer-tb-img {
+    width: 15px;
+    height: 15px;
+}
+.informer-tb th:first-child {
+    width: max-content;
+    text-align: center;
+}
+.informer-tb td:first-child {
+    padding-left: 5px;
+    width: 30px;
+}
+.informer-tb th:last-child {
+    border-right: none;
+}
+.informer-tb th:first-child {
+    border-left: none;
+}
+
+.hero-informer-table {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1496px) {
+    .sidebar__account__logo {
+        padding: 30px 6px;
+    }
+    .sidebar__account__title {
+        font-size: 12px;
+    }
+    .container-block {
+        width: 1100px;
+    }
+    .hero-content__link {
+        font-size: 12px;
+    }
+    .header-logo__title {
+        margin-left: 20px;
+    }
+    .header-logo__title {
+        margin-left: 25px;
+    }
+    .sidebar__tools__item-active {
+        padding: 5px;
+    }
+    .sidebar__tools {
+        width: 15%;
+        margin: 5px;
+    }
+    .sidebar__article__title {
+        font-size: 14px;
+    }
+    .sidebar__article__title-img {
+        width: 30px;
+    }
+    .sidebar__article__text {
+        font-size: 13px;
+    }
+    .sidebar__article__stats  {
+        font-size: 14px;
+        width: 38px;
+        height: 28px;
+    }
+    .hero-content {
+        margin-left: 10px;
+    }
+    .hero-content-state__block {
+        width: 330px;
+    }
+    .hero-content-state__text {
+        font-size: 9px;
+    }
+    .hero-content-state__desc span {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .hero-content-state__block-diagram {
+        width: 480px;
+    }
+    .header__context {
+        font-size: 14px;
+    }
 }
