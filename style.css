@@ -538,6 +538,7 @@ input {
     background-color: #2F2B43;
 }
 .hero-dropbox {
+    color: black;
     background-color: #EFECFF;
     padding: 2px 7px;
     border-radius: 3px;
