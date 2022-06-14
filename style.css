@@ -21,8 +21,12 @@ input {
     border: none;
     color: #ffffff;
 }
-  
-  input:focus {
+.input-read {
+    margin-left: auto;
+    width: 400px;
+    text-transform: uppercase;
+}  
+input:focus {
     outline: none;
 }
 .container {
@@ -229,8 +233,7 @@ input {
 .hero {
     display: flex;
 }
-.hero-content {
-}
+
 .hero-content__link {
     color: #928CAC;
     font-size: 14px;
@@ -961,8 +964,8 @@ input:focus {
 }
 .map {
     position: relative;
-    width: 100%; 
-    height: 250px
+    height: 250px;
+    width: 1030.4px;
 }
 .input-file {
     display: flex;
@@ -1054,7 +1057,78 @@ input:focus {
 .container-wrapper {
     margin: 0 auto;
 }
+.sidebar__article__title-img {
+    width: 25px;
+}
 
+/* @media screen and (max-width: 1200px) {
+    .sidebar__article__title {
+        font-size: 13px;
+    }
+    .sidebar__article__title-img {
+        width: 26px;
+        height: 20px;
+    }
+    .sidebar__article__text  {
+        font-size: 12px;
+    }
+    .sidebar__tools__icon {
+        width: 20px;
+        height: 15px;
+    }
+    .sidebar__article__stats {
+        height: 20px;
+        width: 30px;
+    }
+    .sidebar__article__stats {
+        font-size: 13px;
+    }
+    .hero-content__link {
+        padding: 10px 0;
+    }
+    .hero-content__link {
+        font-size: 12px;
+    }
+    .container-block {
+        width: 98%;
+    }
+    .container {
+        width: 98%;
+    }
+    .sidebar {
+        width: 30%;
+    }
+    .hero {
+        width: 100%;
+    }
+    .hero-content {
+        width: 96%;
+    }
+    .hero-content-state__block {
+        width: 30%;
+    }
+    .hero-content-state__block-diagram  {
+        width: 40%;
+    }
+    .hero-content-card {
+        width: 25%;
+    }
+    .hero__table-content {
+        width: 49%;
+    }
+    .hero-information__diagram {
+        width: 49%;
+    }
+    .hero__information {
+        justify-content: space-between;
+    }
+    .hero-fine-table {
+        width: 45%;
+    }
+    .hero-fine-info-block {
+        width: 54%;
+    }
+} */
 
 @media screen and (min-width: 1500px) {
     .header__context {
@@ -1071,7 +1145,7 @@ input:focus {
         width: 80%;
     }
 }
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1500px) {
     .container-block {
         width: 98%;
     }

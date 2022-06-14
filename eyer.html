@@ -8,20 +8,182 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="import" href="components/e-nazorat modal/index.html">
     <title>E-Yer</title>
     <script src="./index.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-    crossorigin=""/> 
-    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-    crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
     <script type="text/javascript" src="./index.js"></script>
 </head>
 <body class="" id="body">
 
+    <div class="" id="modalFade">
+        <section class="modal " id="modal">
+
+            <div class="header-modal">
+                <div class="header-modal-block">
+                    <h1 class="header-block__title">
+                        Huquqbuzarlik qo'shish
+                    </h1>
+                    <img class="header-block__img" src="./assets/edit2.png" alt="edit">
+                </div>
+                <a class="header-close">
+                    <img id="closeBtn" class="header-close__img" src="./assets/close.png" alt="close">
+                </a>
+            </div>
     
+            <div class="form">
+                <form action="">
+    
+                    <div class="form__wrapper">
+                        <input id="inputId" class="input input-read" type="text" id="manba" required readonly value="">
+                        <label class="label__title" for="manba">Manba *</label>
+                        <input class="input" type="text" id="manba" required placeholder="Inspektor">
+                    </div>
+    
+                    <h1 class="form__title">O'zboshimcha egallangan yer m'alumotlari</h1>
+    
+                    <div class="form__container-wrapper">
+                        <div class="form__container">
+                            <div class="form__wrapper form__container-full">
+                                <label class="label__title" for="manba">Viloyat/Tuman *</label>
+                                <select class="select select-modal" name="" id="">
+                                    <option class="option" value="">O'zbekiston Respublikasi</option>
+                                </select>
+                            </div>
+                            <div class="form__wrapper form__container-full">
+                                <label class="label__title" for="manba">Tuman *</label>
+                                <select class="select select-modal" name="" id="">
+                                    <option class="option" value="">Taxtako'pir tumani</option>
+                                </select>
+                            </div>
+                        </div>
+    
+    
+                        <div class="form__container">
+                            <div class="form__wrapper form__container-full">
+                                <label class="label__title" for="manba">Mahalla</label>
+                                <select class="select select-modal" name="" id="">
+                                    <option class="option" value="">Taxtako'pir tumanining shaharchalari</option>
+                                </select>
+                            </div>
+                            <div class="form__wrapper form__container-full">
+                                <label class="label__title" for="manba">Ko'cha</label>
+                                <input class="input" type="text" id="manba" required placeholder="">
+                            </div>
+                        </div>
+    
+    
+                        <div class="form__container">
+                            <div class="form__wrapper form__container-quarter">
+                                <label class="label__title" for="manba">Uy raqami</label>
+                                <input class="input" type="text" id="manba" required placeholder="">
+                            </div>
+                            <div class="form__wrapper form__container-quarter">
+                                <label class="label__title" for="manba">Mo'lljal</label>
+                                <input class="input" type="text" id="manba" required placeholder="">
+                            </div>
+                            <div class="form__wrapper form__container-quarter">
+                                <label class="label__title" for="manba">Kadastr raqami</label>
+                                <input class="input" type="text" id="manba" required placeholder="">
+                            </div>
+                            <div class="form__wrapper form__container-quarter">
+                                <label class="label__title" for="manba">Taxminiy o'zboshimcha maydon (kv2)</label>
+                                <input class="input" type="text" id="manba" required placeholder="">
+                            </div>
+                        </div>
+                        <div class="form__map">
+                            <div id="map" class="map"></div>
+                        </div>
+    
+                        <div class="form__container">
+                            <div class="form__wrapper form__container-full">
+                                <label class="label__title" for="manba">Viloyat/Tuman *</label>
+                                <input class="input input-file" type="file" id="manba" placeholder="drag images (10 files) here, max.size">
+                            </div>
+                            <div class="form__wrapper form__container-full">
+                                <label class="label__title" for="manba">Huquqbuzar shaxs</label>
+                                <div class="form__radio">
+                                    <div class="form__wrapper radio-block">
+                                        <label class="label__title" for="manba">Jasmoniy shaxs</label>
+                                        <input class="input radio" type="radio" id="manba" required placeholder="">
+                                    </div>
+                                    <div class="form__wrapper radio-block">
+                                        <label class="label__title" for="manba">Yuridik shaxs</label>
+                                        <input class="input radio" type="radio" id="manba" required placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-grid">
+                            <div class="form-grid-comment">
+                                <div class="form__wrapper">
+                                    <label class="label__title" for="manba">Qo'shimcha ma'lumotlar</label>
+                                    <input class="input input-comment" type="text" id="manba" required placeholder="">
+                                </div>
+                                
+                            </div>
+                            <div class="grid-inputs">
+                                <div class="grid-inputs-container">
+                                    <div class="form__wrapper form-grid-field">
+                                        <label class="label__title" for="manba">Familiya</label>
+                                        <input class="input" type="text" id="manba" required placeholder="">
+                                    </div>
+                                    <div class="form__wrapper form-grid-field">
+                                        <label class="label__title" for="manba">Ismi</label>
+                                        <input class="input" type="text" id="manba" required placeholder="">
+                                    </div>
+                                </div>
+                                <div class="grid-inputs-container">
+                                    <div class="form__wrapper form-grid-field">
+                                        <label class="label__title" for="manba">Otasining ismi</label>
+                                        <input class="input" type="text" id="manba" required placeholder="">
+                                    </div>
+                                    <div class="form__wrapper form-grid-field">
+                                        <label class="label__title" for="manba">JSH SHIR</label>
+                                        <input class="input" type="text" id="manba" required placeholder="">
+                                    </div>
+                                </div>
+                                <div class="grid-inputs-container">
+                                    <div class="form__wrapper form-grid-field">
+                                        <label class="label__title" for="manba">STIR</label>
+                                        <input class="input" type="text" id="manba" required placeholder="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    <h1 class="form__title">Arizachi ma'lumotlari</h1>
+    
+                    <div class="form__submit">
+                        <div class="form__wrapper form__container-submit">
+                            <label class="label__title" for="manba">Uy raqami</label>
+                            <input class="input" type="text" id="manba" required placeholder="">
+                        </div>
+                        <div class="form__wrapper form__container-submit">
+                            <label class="label__title" for="manba">Mo'lljal</label>
+                            <input class="input" type="text" id="manba" required placeholder="">
+                        </div>
+                        <div class="form__wrapper form__container-submit">
+                            <label class="label__title" for="manba">Kadastr raqami</label>
+                            <input class="input" type="text" id="manba" required placeholder="">
+                        </div>
+                        <button class="btn" type="submit">
+                            Saqlash
+                        </button>
+                        <button style="background-color: rgb(211, 6, 6); margin-left: 10px" class="btn" id="cancelBtn">
+                            Bekor qilish
+                        </button>
+                    </div>
+    
+                </form>
+    
+            </div>
+    
+        </section>
+    </div>
     
     <section class="header__position">
         <div class="header">
@@ -59,173 +221,7 @@
 
     <section class="hero">
 
-        <div class="" id="modalFade">
-            <section class="modal " id="modal">
-    
-                <div class="header-modal">
-                    <div class="header-modal-block">
-                        <h1 class="header-block__title">
-                            Huquqbuzarlik qo'shish
-                        </h1>
-                        <img class="header-block__img" src="./assets/edit2.png" alt="edit">
-                    </div>
-                    <a class="header-close">
-                        <img id="closeBtn" class="header-close__img" src="./assets/close.png" alt="close">
-                    </a>
-                </div>
         
-                <div class="form">
-                    <form action="">
-        
-                        <div class="form__wrapper">
-                            <label class="label__title" for="manba">Manba *</label>
-                            <input class="input" type="text" id="manba" required placeholder="Inspektor">
-                        </div>
-        
-                        <h1 class="form__title">O'zboshimcha egallangan yer m'alumotlari</h1>
-        
-                        <div class="form__container-wrapper">
-                            <div class="form__container">
-                                <div class="form__wrapper form__container-full">
-                                    <label class="label__title" for="manba">Viloyat/Tuman *</label>
-                                    <select class="select select-modal" name="" id="">
-                                        <option class="option" value="">O'zbekiston Respublikasi</option>
-                                    </select>
-                                </div>
-                                <div class="form__wrapper form__container-full">
-                                    <label class="label__title" for="manba">Tuman *</label>
-                                    <select class="select select-modal" name="" id="">
-                                        <option class="option" value="">Taxtako'pir tumani</option>
-                                    </select>
-                                </div>
-                            </div>
-        
-        
-                            <div class="form__container">
-                                <div class="form__wrapper form__container-full">
-                                    <label class="label__title" for="manba">Mahalla</label>
-                                    <select class="select select-modal" name="" id="">
-                                        <option class="option" value="">Taxtako'pir tumanining shaharchalari</option>
-                                    </select>
-                                </div>
-                                <div class="form__wrapper form__container-full">
-                                    <label class="label__title" for="manba">Ko'cha</label>
-                                    <input class="input" type="text" id="manba" required placeholder="">
-                                </div>
-                            </div>
-        
-        
-                            <div class="form__container">
-                                <div class="form__wrapper form__container-quarter">
-                                    <label class="label__title" for="manba">Uy raqami</label>
-                                    <input class="input" type="text" id="manba" required placeholder="">
-                                </div>
-                                <div class="form__wrapper form__container-quarter">
-                                    <label class="label__title" for="manba">Mo'lljal</label>
-                                    <input class="input" type="text" id="manba" required placeholder="">
-                                </div>
-                                <div class="form__wrapper form__container-quarter">
-                                    <label class="label__title" for="manba">Kadastr raqami</label>
-                                    <input class="input" type="text" id="manba" required placeholder="">
-                                </div>
-                                <div class="form__wrapper form__container-quarter">
-                                    <label class="label__title" for="manba">Taxminiy o'zboshimcha maydon (kv2)</label>
-                                    <input class="input" type="text" id="manba" required placeholder="">
-                                </div>
-                            </div>
-                            <div class="form__map">
-                                <div id="map" class="map"></div>
-                            </div>
-        
-                            <div class="form__container">
-                                <div class="form__wrapper form__container-full">
-                                    <label class="label__title" for="manba">Viloyat/Tuman *</label>
-                                    <input class="input input-file" type="file" id="manba" placeholder="drag images (10 files) here, max.size">
-                                </div>
-                                <div class="form__wrapper form__container-full">
-                                    <label class="label__title" for="manba">Huquqbuzar shaxs</label>
-                                    <div class="form__radio">
-                                        <div class="form__wrapper radio-block">
-                                            <label class="label__title" for="manba">Jasmoniy shaxs</label>
-                                            <input class="input radio" type="radio" id="manba" required placeholder="">
-                                        </div>
-                                        <div class="form__wrapper radio-block">
-                                            <label class="label__title" for="manba">Yuridik shaxs</label>
-                                            <input class="input radio" type="radio" id="manba" required placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="form-grid">
-                                <div class="form-grid-comment">
-                                    <div class="form__wrapper">
-                                        <label class="label__title" for="manba">Qo'shimcha ma'lumotlar</label>
-                                        <input class="input input-comment" type="text" id="manba" required placeholder="">
-                                    </div>
-                                    
-                                </div>
-                                <div class="grid-inputs">
-                                    <div class="grid-inputs-container">
-                                        <div class="form__wrapper form-grid-field">
-                                            <label class="label__title" for="manba">Familiya</label>
-                                            <input class="input" type="text" id="manba" required placeholder="">
-                                        </div>
-                                        <div class="form__wrapper form-grid-field">
-                                            <label class="label__title" for="manba">Ismi</label>
-                                            <input class="input" type="text" id="manba" required placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="grid-inputs-container">
-                                        <div class="form__wrapper form-grid-field">
-                                            <label class="label__title" for="manba">Otasining ismi</label>
-                                            <input class="input" type="text" id="manba" required placeholder="">
-                                        </div>
-                                        <div class="form__wrapper form-grid-field">
-                                            <label class="label__title" for="manba">JSH SHIR</label>
-                                            <input class="input" type="text" id="manba" required placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="grid-inputs-container">
-                                        <div class="form__wrapper form-grid-field">
-                                            <label class="label__title" for="manba">STIR</label>
-                                            <input class="input" type="text" id="manba" required placeholder="">
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-        
-                            </div>
-        
-                        <h1 class="form__title">Arizachi ma'lumotlari</h1>
-        
-                        <div class="form__submit">
-                            <div class="form__wrapper form__container-submit">
-                                <label class="label__title" for="manba">Uy raqami</label>
-                                <input class="input" type="text" id="manba" required placeholder="">
-                            </div>
-                            <div class="form__wrapper form__container-submit">
-                                <label class="label__title" for="manba">Mo'lljal</label>
-                                <input class="input" type="text" id="manba" required placeholder="">
-                            </div>
-                            <div class="form__wrapper form__container-submit">
-                                <label class="label__title" for="manba">Kadastr raqami</label>
-                                <input class="input" type="text" id="manba" required placeholder="">
-                            </div>
-                            <button class="btn" type="submit">
-                                Saqlash
-                            </button>
-                            <button style="background-color: rgb(211, 6, 6); margin-left: 10px" class="btn" id="cancelBtn">
-                                Bekor qilish
-                            </button>
-                        </div>
-        
-                    </form>
-        
-                </div>
-        
-            </section>
-        </div>
 
             <div class="sidebar">
                 <div class="sidebar__account">

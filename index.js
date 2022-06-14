@@ -1,15 +1,11 @@
 window.onload = function() {
 
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([41.345570, 69.284599], 13);
 
     var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
     osm.addTo(map);
-
-    L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
 
     const closeModal = document.getElementById('closeBtn');
     const modal = document.getElementById('modal');
@@ -17,6 +13,7 @@ window.onload = function() {
     const body = document.getElementById('body');
     const cancelBtn = document.getElementById('cancelBtn');
     const urlMenu = document.getElementById('dogMenu');
+    const inputId = document.getElementById('inputId');
 
 
     let selector = document.getElementById("dogMenu"); 
@@ -28,17 +25,13 @@ window.onload = function() {
             modal.classList.add('modal-active');
             modalFade.classList.add('modal-fade');
             body.classList.add('scroll-hidden');
+            inputId.value = selector.value;
             break;
         case "yer":
-            // code
+            
         }
     });
     });
-    urlMenu.addEventListener("change", function(){ 
-        
-
-        
-    }) 
 
     closeModal.addEventListener('click', (e) => {
         e.preventDefault();
